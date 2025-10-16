@@ -1,0 +1,16 @@
+services:
+  dev:
+    image: kvozt/linera-dev:latest
+    environment:
+      - PROJECT_NAME=${PROJECT_NAME:-default-project-name}
+      - LOCAL_UID=${LOCAL_UID} 
+      - LOCAL_GID=${LOCAL_GID}
+    user: "${LOCAL_UID}:${LOCAL_GID}"
+    stdin_open: true 
+    tty: true
+    entrypoint: /usr/app/entrypoint.sh
+    working_dir: /usr/app
+    volumes:
+      - ./:/usr/app
+    ports:
+      - "8081:8081"
