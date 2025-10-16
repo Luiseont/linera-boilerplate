@@ -36,4 +36,4 @@ docker compose exec dev bash
 
 ## Notes
 - Sometimes, you need set permission to start.sh and stop.sh. keep in mind
-- For more information, see the official Linera documentation: https://github.com/linera-io/linera
+- For more information, see the official Linera documentation: https://github.com/linera-io
