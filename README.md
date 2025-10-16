@@ -1,4 +1,4 @@
-# Linera Back App: Ready to Develop
+# Linera Boilerplate: Ready to Develop
 
 This project provides a ready-to-develop environment for building and copile Linera contracts using Docker.
 
